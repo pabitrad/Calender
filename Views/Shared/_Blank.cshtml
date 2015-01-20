@@ -1,0 +1,13 @@
+﻿@using KwasantWeb.Controllers.Helpers
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    @RenderSection("styles", required: false)
+    @RenderSection("immediateScripts", required: false)
+</head>
+<body style="padding: 10px; width:560px; overflow: hidden">
+@RenderBody()
+    @RenderSection("scripts", required: false)
+</body>
+</html>
